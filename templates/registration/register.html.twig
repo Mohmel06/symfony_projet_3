@@ -19,29 +19,6 @@
                     'type':'email',
                 }
             })}}
-        </div>    
-
-            <div>
-            <label for="name">Votre Nom :</label>
-            {{ form_widget(registrationForm.name, {
-                'attr':{
-                    'class':'form-control',
-                    'id':'name',
-                    'type':'text',
-                }
-            })}}
-        </div>    
-        <div>
-            <label for="firstname">Votre Prénom :</label>
-            {{ form_widget(registrationForm.firstname, {
-                'attr':{
-                    'class':'form-control',
-                    'id':'firstname',
-                    'type':'text',
-                }
-            })}}
-        </div>
-
         {{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}
